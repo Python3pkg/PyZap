@@ -12,7 +12,7 @@ def _pre_install():
       try:
             import pyzap.library
       except OSError as e:
-            print("Library can not be loaded: %s" % (str(e)))
+            print(("Library can not be loaded: %s" % (str(e))))
             raise
 
 

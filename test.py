@@ -9,8 +9,8 @@ max_calls = 15
 def status_receiver(status, signal, snr, ber, uncorrected_blocks, is_locked):
     global max_calls
 
-    print("Status received.  STATUS= (%d)  SNR= (%d)  IS_LOCKED= [%s]" % 
-          (status, snr, bool(is_locked)))
+    print(("Status received.  STATUS= (%d)  SNR= (%d)  IS_LOCKED= [%s]" % 
+          (status, snr, bool(is_locked))))
 
     max_calls -= 1
 
